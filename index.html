@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .emoji {
+      width: 160px;
+      height: 160px;
+      display: inline-block;
+      position: relative;
+      background: url('images/emoji-120.png');
+      animation: spin 2s infinite;
+    }
+      .emoji2 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emoji-121.png');
+        animation: spin 2s infinite;
+      }
+      .emoji3 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emoji-122.png');
+        animation: spin 2s infinite;
+      }
+      .emoji4 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emoji-123.png');
+        animation: spin 2s infinite;
+      }
+      .emoji5 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        background: url('images/emoji-124.png');
+        animation: spin 2s infinite;
+      }
+      .emoji-e {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-120.png');
+        background-position: -640px top;
+        animation: blink .5s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji-m {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-120.png');
+        background-position: -160px top;
+        animation: smile 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji2-e {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-121.png');
+        background-position: -640px top;
+        animation: blink .5s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji2-m {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-121.png');
+        background-position: -160px top;
+        animation: smile 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji3-e {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-122.png');
+        background-position: -640px top;
+        animation: blink .5s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji3-m {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-122.png');
+        background-position: -160px top;
+        animation: smile 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji4-e {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-123.png');
+        background-position: -640px top;
+        animation: blink .5s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji4-m {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-123.png');
+        background-position: -160px top;
+        animation: smile 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji5-e {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-124.png');
+        background-position: -640px top;
+        animation: blink .5s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji5-m {
+        width: 160px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url('images/emoji-124.png');
+        background-position: -160px top;
+        animation: smile 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+      .emoji:hover .emoji-m, .emoji:hover .emoji-e,
+      .emoji2:hover .emoji2-m, .emoji2:hover .emoji2-e,
+      .emoji3:hover .emoji3-m, .emoji3:hover .emoji3-e,
+      .emoji4:hover .emoji4-m, .emoji4:hover .emoji4-e,
+      .emoji5:hover .emoji5-m, .emoji5:hover .emoji5-e {
+        animation-play-state: running;
+      }
+      @keyframes spin {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+      }
+      @keyframes blink {
+        0% {background-position: -640px top;}
+        33% {background-position: -800px top;}
+        66% {background-position: -960px top;}
+      }
+      @keyframes smile {
+        0% {background-position: -160px top;}
+        33% {background-position: -320px top;}
+        66% {background-position: -480px top;}
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+    <div class="emoji">
+      <div class="emoji-e"></div>
+      <div class="emoji-m"></div>
+    </div>
+    <div class="emoji2">
+      <div class="emoji2-e"></div>
+      <div class="emoji2-m"></div>
+    </div>
+  </div>
+  <div>
+    <div class="emoji3">
+      <div class="emoji3-e"></div>
+      <div class="emoji3-m"></div>
+    </div>
+    <div class="emoji4">
+      <div class="emoji4-e"></div>
+      <div class="emoji4-m"></div>
+    </div>
+  </div>
+  <div>
+    <div class="emoji5">
+      <div class="emoji5-e"></div>
+      <div class="emoji5-m"></div>
+    </div>
+  </div>
+  </body>
+</html>
